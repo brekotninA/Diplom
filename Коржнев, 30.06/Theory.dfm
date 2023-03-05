@@ -1,0 +1,86 @@
+object fTheory: TfTheory
+  Left = 126
+  Top = 66
+  Width = 1107
+  Height = 628
+  Caption = #1058#1077#1086#1088#1080#1103
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object sButton_Exit: TsButton
+    Left = 456
+    Top = 480
+    Width = 201
+    Height = 65
+    Caption = #1042#1099#1093#1086#1076' '#1074' '#1087#1088#1077#1076#1099#1076#1091#1097#1077#1077' '#1084#1077#1085#1102
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+    OnClick = sButton_ExitClick
+    SkinData.SkinSection = 'BUTTON'
+  end
+  object sMemo_theory: TsMemo
+    Left = 608
+    Top = 16
+    Width = 449
+    Height = 449
+    Color = clWhite
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlack
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 1
+    BoundLabel.Indent = 0
+    BoundLabel.Font.Charset = DEFAULT_CHARSET
+    BoundLabel.Font.Color = clWindowText
+    BoundLabel.Font.Height = -11
+    BoundLabel.Font.Name = 'Tahoma'
+    BoundLabel.Font.Style = []
+    BoundLabel.Layout = sclLeft
+    BoundLabel.MaxWidth = 0
+    BoundLabel.UseSkinColor = True
+    SkinData.SkinSection = 'EDIT'
+  end
+  object sTreeView_Grammar: TsTreeView
+    Left = 16
+    Top = 16
+    Width = 489
+    Height = 449
+    Color = clWhite
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlack
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    Indent = 19
+    ParentFont = False
+    ReadOnly = True
+    RowSelect = True
+    TabOrder = 2
+    OnClick = sTreeView_GrammarClick
+    BoundLabel.Indent = 0
+    BoundLabel.Font.Charset = DEFAULT_CHARSET
+    BoundLabel.Font.Color = clWindowText
+    BoundLabel.Font.Height = -11
+    BoundLabel.Font.Name = 'Tahoma'
+    BoundLabel.Font.Style = []
+    BoundLabel.Layout = sclLeft
+    BoundLabel.MaxWidth = 0
+    BoundLabel.UseSkinColor = True
+    SkinData.SkinSection = 'EDIT'
+  end
+end

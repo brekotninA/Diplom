@@ -1,0 +1,7 @@
+Image1 RCDATA "db\DefaultIMG\Smile-1.bmp"
+Image2 RCDATA "db\DefaultIMG\Smile-2.bmp"
+Image3 RCDATA "db\DefaultIMG\Audio.bmp"
+Image4 RCDATA "db\DefaultIMG\Video.bmp"
+Image5 RCDATA "db\DefaultIMG\PhotoApp.bmp"
+Image6 RCDATA "db\DefaultIMG\book.bmp"
+Image7 RCDATA "db\DefaultIMG\StartIMG.bmp"

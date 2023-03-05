@@ -1,0 +1,89 @@
+object TrajectChooseForm: TTrajectChooseForm
+  Left = 511
+  Top = 164
+  Width = 274
+  Height = 426
+  BorderIcons = [biSystemMenu]
+  Caption = #1042#1099#1073#1086#1088' '#1090#1088#1072#1077#1082#1090#1086#1088#1080#1080
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  OnCreate = FormCreate
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object sBitBtn2: TsBitBtn
+    Left = 8
+    Top = 343
+    Width = 121
+    Height = 42
+    Caption = #1042#1099#1073#1088#1072#1090#1100
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+    OnClick = sBitBtn2Click
+    SkinData.SkinSection = 'BUTTON'
+  end
+  object sBitBtn1: TsBitBtn
+    Left = 136
+    Top = 344
+    Width = 114
+    Height = 39
+    Caption = #1042#1099#1093#1086#1076
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ModalResult = 2
+    ParentFont = False
+    TabOrder = 1
+    SkinData.SkinSection = 'BUTTON'
+  end
+  object sListView1: TsListView
+    Left = 8
+    Top = 8
+    Width = 241
+    Height = 329
+    BoundLabel.Indent = 0
+    BoundLabel.Font.Charset = DEFAULT_CHARSET
+    BoundLabel.Font.Color = clWindowText
+    BoundLabel.Font.Height = -11
+    BoundLabel.Font.Name = 'MS Sans Serif'
+    BoundLabel.Font.Style = []
+    BoundLabel.Layout = sclLeft
+    BoundLabel.MaxWidth = 0
+    BoundLabel.UseSkinColor = True
+    SkinData.SkinSection = 'EDIT'
+    Color = 8500947
+    Columns = <
+      item
+        Width = 500
+      end>
+    ColumnClick = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlack
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    GridLines = True
+    HideSelection = False
+    ReadOnly = True
+    RowSelect = True
+    ParentFont = False
+    ShowColumnHeaders = False
+    TabOrder = 2
+    ViewStyle = vsReport
+    OnDblClick = sListView1DblClick
+    OnKeyPress = sListView1KeyPress
+  end
+end

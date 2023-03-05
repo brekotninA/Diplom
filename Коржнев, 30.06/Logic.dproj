@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{580e2477-2f9a-413f-bc54-699e70a591b6}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>Logic.exe</DCC_DependencyCheckOutputName>
+    <MainSource>Logic.dpr</MainSource>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_Define>RELEASE</DCC_Define>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_Define>STANDARD_PROTECT</DCC_Define>
+    <DCC_Optimize>False</DCC_Optimize>
+    <DCC_SymbolReferenceInfo>2</DCC_SymbolReferenceInfo>
+    <DCC_UnitSearchPath>$(BDS)\lib\Debug;$(BDS)\Lib\Debug\Indy10</DCC_UnitSearchPath>
+    <DCC_ResourcePath>$(BDS)\lib\Debug;$(BDS)\Lib\Debug\Indy10</DCC_ResourcePath>
+    <DCC_ObjPath>$(BDS)\lib\Debug;$(BDS)\Lib\Debug\Indy10</DCC_ObjPath>
+    <DCC_IncludePath>$(BDS)\lib\Debug;$(BDS)\Lib\Debug\Indy10</DCC_IncludePath>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+<BorlandProject><Delphi.Personality><Parameters><Parameters Name="UseLauncher">False</Parameters><Parameters Name="LoadAllSymbols">True</Parameters><Parameters Name="LoadUnspecifiedSymbols">False</Parameters></Parameters><VersionInfo><VersionInfo Name="IncludeVerInfo">False</VersionInfo><VersionInfo Name="AutoIncBuild">False</VersionInfo><VersionInfo Name="MajorVer">1</VersionInfo><VersionInfo Name="MinorVer">0</VersionInfo><VersionInfo Name="Release">0</VersionInfo><VersionInfo Name="Build">0</VersionInfo><VersionInfo Name="Debug">False</VersionInfo><VersionInfo Name="PreRelease">False</VersionInfo><VersionInfo Name="Special">False</VersionInfo><VersionInfo Name="Private">False</VersionInfo><VersionInfo Name="DLL">False</VersionInfo><VersionInfo Name="Locale">1049</VersionInfo><VersionInfo Name="CodePage">1251</VersionInfo></VersionInfo><VersionInfoKeys><VersionInfoKeys Name="CompanyName"></VersionInfoKeys><VersionInfoKeys Name="FileDescription"></VersionInfoKeys><VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys><VersionInfoKeys Name="InternalName"></VersionInfoKeys><VersionInfoKeys Name="LegalCopyright"></VersionInfoKeys><VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys><VersionInfoKeys Name="OriginalFilename"></VersionInfoKeys><VersionInfoKeys Name="ProductName"></VersionInfoKeys><VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys><VersionInfoKeys Name="Comments"></VersionInfoKeys></VersionInfoKeys><Source><Source Name="MainSource">Logic.dpr</Source></Source></Delphi.Personality><ModelSupport>False</ModelSupport></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+  <ItemGroup>
+    <DelphiCompile Include="Logic.dpr">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+    <DCCReference Include="Admin.pas">
+      <Form>AdminForm</Form>
+    </DCCReference>
+    <DCCReference Include="ChangeAdminPas.pas">
+      <Form>fChangeAdminPas</Form>
+    </DCCReference>
+    <DCCReference Include="Choose.pas">
+      <Form>fChoose</Form>
+    </DCCReference>
+    <DCCReference Include="ClassReports.pas">
+      <Form>ClassReportsForm</Form>
+    </DCCReference>
+    <DCCReference Include="CompleXityEditor.pas">
+      <Form>CompleXityEditorForm</Form>
+    </DCCReference>
+    <DCCReference Include="db\MyDB.pas">
+      <Form>fDB</Form>
+    </DCCReference>
+    <DCCReference Include="DiagReports.pas">
+      <Form>DiagReportsForm</Form>
+    </DCCReference>
+    <DCCReference Include="Edit.pas">
+      <Form>EditForm</Form>
+    </DCCReference>
+    <DCCReference Include="EditStudents.pas">
+      <Form>fEditStudents</Form>
+    </DCCReference>
+    <DCCReference Include="Entry.pas">
+      <Form>fEntry</Form>
+    </DCCReference>
+    <DCCReference Include="ExportImport.pas">
+      <Form>ExportImportForm</Form>
+    </DCCReference>
+    <DCCReference Include="Image.pas">
+      <Form>ImageForm</Form>
+    </DCCReference>
+    <DCCReference Include="IndependentWork.pas">
+      <Form>a</Form>
+    </DCCReference>
+    <DCCReference Include="IndReports.pas">
+      <Form>IndReportsForm</Form>
+    </DCCReference>
+    <DCCReference Include="ISAdminCheckPassword.pas">
+      <Form>fISAdminCheckPassword</Form>
+    </DCCReference>
+    <DCCReference Include="Key\Key.pas">
+      <Form>Form9</Form>
+    </DCCReference>
+    <DCCReference Include="Key\PW.pas" />
+    <DCCReference Include="LessonsEditor.pas">
+      <Form>LessonsEditorForm</Form>
+    </DCCReference>
+    <DCCReference Include="MainMenu.pas">
+      <Form>fMainMenu</Form>
+    </DCCReference>
+    <DCCReference Include="MetodistEditor.pas">
+      <Form>MetodistForm</Form>
+    </DCCReference>
+    <DCCReference Include="Misc.pas" />
+    <DCCReference Include="OptionUser.pas">
+      <Form>fOptionUser</Form>
+    </DCCReference>
+    <DCCReference Include="QuestionEditor.pas">
+      <Form>QuestionEditorForm</Form>
+    </DCCReference>
+    <DCCReference Include="QuestionType.pas">
+      <Form>QuestionTypeForm</Form>
+    </DCCReference>
+    <DCCReference Include="QuestionTypesEditor.pas">
+      <Form>QuestionTypesEditorForm</Form>
+    </DCCReference>
+    <DCCReference Include="Redact.pas">
+      <Form>RedactForm</Form>
+    </DCCReference>
+    <DCCReference Include="RegNewUser.pas">
+      <Form>fRegNewUser</Form>
+    </DCCReference>
+    <DCCReference Include="ResultsUser.pas">
+      <Form>Form6</Form>
+    </DCCReference>
+    <DCCReference Include="ResultToChild.pas">
+      <Form>fResultToChild</Form>
+    </DCCReference>
+    <DCCReference Include="SelectLesson.pas">
+      <Form>fSelectLesson</Form>
+    </DCCReference>
+    <DCCReference Include="ShowAnswerPicture.pas">
+      <Form>ShowAnswerPictureForm</Form>
+    </DCCReference>
+    <DCCReference Include="ShowAudio.pas">
+      <Form>ShowAudioForm</Form>
+    </DCCReference>
+    <DCCReference Include="ShowPicture.pas">
+      <Form>ShowPictureForm</Form>
+    </DCCReference>
+    <DCCReference Include="ShowVideo.pas">
+      <Form>ShowVideoForm</Form>
+    </DCCReference>
+    <DCCReference Include="Start.pas">
+      <Form>StartForm</Form>
+    </DCCReference>
+    <DCCReference Include="TrajectChoose.pas">
+      <Form>TrajectChooseForm</Form>
+    </DCCReference>
+    <DCCReference Include="TrajectEditor.pas">
+      <Form>TrajectEditorForm</Form>
+    </DCCReference>
+    <DCCReference Include="Traject_level.pas">
+      <Form>Traject_levelForm</Form>
+    </DCCReference>
+    <DCCReference Include="Utils.pas" />
+  </ItemGroup>
+</Project>
